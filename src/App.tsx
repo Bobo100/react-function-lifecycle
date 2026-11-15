@@ -19,7 +19,7 @@ function App() {
   }, [])
   return (
     <div className="App" id='App'>
-      <Router basename="/React-Function-Component-LifeCycle">
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFoundPage />}></Route>
